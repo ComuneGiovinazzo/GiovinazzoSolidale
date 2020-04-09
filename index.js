@@ -22,7 +22,7 @@ handler.on('push', function (event) {
     event.payload.repository.name,
     event.payload.ref)
     if (event.payload.commits[][author][name] === 'ComuneGiovinazzo') {
-      bot.sendMessage(process.env.CHAT_ID, 'I dati sono stati aggiornati');
+	  bot.sendMessage(process.env.CHAT_ID,"Abbiamo aggiornato i dati del progetto <i>Giovinazzo Solidale</i> \n <a href=\"https://github.com/ComuneGiovinazzo/GiovinazzoSolidale/\">Apri la repository</a>" ,{parse_mode : "HTML"});
     }
 })
 
