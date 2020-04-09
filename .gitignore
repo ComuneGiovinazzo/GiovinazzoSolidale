@@ -1,9 +1,5 @@
-<<<<<<< HEAD
 # Ingoring mac files
 *.DS_Store
-=======
-# misc
-.DS_Store
 
 # Logs
 logs
@@ -110,4 +106,3 @@ dist
 
 # TernJS port file
 .tern-port
->>>>>>> 67a9937176577370b3831c6a1c47be2e8a88368a
