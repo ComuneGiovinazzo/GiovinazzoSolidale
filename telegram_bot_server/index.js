@@ -7,15 +7,9 @@ const TelegramBot = require('node-telegram-bot-api');
 const bot = new TelegramBot(process.env.BOT_TOKEN, {polling: true});
 
 http.createServer(function (req, res) {
-  let body = [];
-  if (request.method === 'POST' && request.url === '/test') {
-    let body = [];
-    request.on('data', (chunk) => {
-      body.push(chunk);
-    }).on('end', () => {
-      body = Buffer.concat(body).toString();
-      response.end(body);
-    });
+  if (req.method === 'GET' && req.url === '/test') {
+    console.log("test ok");
+  }
   handler(req, res, function (err) {
     res.statusCode = 404
     res.end('no such location')
